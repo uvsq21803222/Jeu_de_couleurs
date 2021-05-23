@@ -32,8 +32,6 @@ temps = 30
 score = 0
 couleur_a_afficher = []
 text_a_afficher = []
-Largeur = 600
-Hauteur = 380
 nbclick = 0
 reponse = []
 
