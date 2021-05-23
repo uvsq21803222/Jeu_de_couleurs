@@ -32,10 +32,15 @@ temps = 30
 score = 0
 couleur_a_afficher = []
 text_a_afficher = []
-WIDTH = 600
-HEIGHT = 380
+Largeur = 600
+Hauteur = 380
 nbclick = 0
 reponse = []
+
+
+#  définition des variables constantes
+Largeur = 600
+Hauteur = 380
 comment_jouer = "Tapez la couleur des mots, et pas le texte des mots !!!"
 
 
@@ -83,7 +88,7 @@ def create_labels(nombre):
     global labels
     labels.clear
     y = 0
-    lblframe = Frame(canevas, width=WIDTH, height=HEIGHT)
+    lblframe = Frame(canevas, width=Largeur, height=Hauteur)
     lblframe.grid(row=3, column=0, padx=25, pady=25, sticky="w")
     for i in range(nombre):
         lbl = Label(lblframe, font=(font.Font(size=16)), bg='grey74')
@@ -135,7 +140,7 @@ ma_fenetre.title("Jeu de couleurs")
 ma_fenetre.geometry('600x380')
 ma_fenetre.resizable(width=False, height=False)
 # creation des widgets
-canevas = Canvas(ma_fenetre, width=WIDTH, height=HEIGHT, bg='grey74')
+canevas = Canvas(ma_fenetre, width=Largeur, height=Hauteur, bg='grey74')
 parametre_font = font.Font(family='Ubuntu', size=14)
 description_jeu = Label(canevas, text=comment_jouer, font=parametre_font, fg="black")
 score_jeu = Label(canevas, text="Score : " + str(score), font=parametre_font, fg="black")
